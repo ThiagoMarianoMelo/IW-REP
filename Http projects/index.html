@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Nome</title>
+    <title>OutMovies</title>
 
 </head>
 
 <body>
     <header class= cabecalho>
         <div class= logo-div>
-            <h1 class="logo">NOME</h1>
+            <h1 class="logo">OutMovies</h1>
         </div>
         <div>
             <nav>
                 <ul class="navegacao">
-                    <li><a href="#2"> lançamentos  </a></li>
-                    <li><a href="#3"> em destaque  </a></li>
-                    <li><a href="#4"> avaliações  </a></li>
-                    <li><a href="#5"> entrevistas & makingof</a></li>
+                    <li><a href="#lancamentos"> lançamentos  </a></li>
+                    <li><a href="#destaque"> em destaque  </a></li>
+                    <li><a href="#avaliacoes"> avaliações  </a></li>
+                    <li><a href="#entrevistas"> entrevistas & makingof</a></li>
                     <li><a href="#6"> novidades </a></li>
                 </ul>
             </nav>
@@ -32,34 +32,37 @@
         </div>
     </header>
 
-    <section class="section-destaque">
-        <div class="div-lancamentos-titulo">
+    <section class="section-lancamentos">
+        <div id="lancamentos" class="div-lancamentos-titulo">
         <h2 class="titulo-lancamentos">Lançamentos</h2>
         </div>
         <div class="grid-lancamentos">
             <div class="video-iframe">
-                <iframe width="650" height="360" src="https://www.youtube.com/embed/2sLt0r39Bi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="640" height="350" src="https://www.youtube.com/embed/dBUsVqqDhsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
-            <div>
-                <h3 class="nome-do-filme">Nome do filme</h3>
-                <p class="sinopse"><strong>Sinopse:</strong> Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Nisi debitis libero maiores possimus eligendi, aut
-                    impedit, quibusdam cupiditate deleniti provident velit, quaerat nam 
-                    magnam assumenda? Provident voluptate veniam laboriosam maiores.</p>
+            <div class=filme>
+                <h3 class="nome-do-filme">Ponto Vermelho</h3>
+                <p class="sinopse"><strong>Sinopse:</strong> Um 
+                casal sueco planeja uma viagem romântica ao 
+                norte do país para superar a crise no relacionamento. 
+                Ele pretende reconquistar a mulher dos seus sonhos, e 
+                ela deseja anunciar a gravidez recém-descoberta. 
+                No entanto, os planos são deixados em segundo plano 
+                quando começam a ser perseguidos por um atirador desconhecido.</p>
                 <br>
                 <div class=dre>
-                <p><strong>Diretor:</strong> Nome do diretor </p>
-                <p><strong>Roteiro:</strong> Nome do roteirista</p>
-                <p><strong>Estreia:</strong> 2020</p>
+                <p><strong>Diretor:</strong> Alain Darborg </p>
+                <p><strong>Roteiro:</strong> Per Dickson</p>
+                <p><strong>Estreia:</strong> 2021</p>
                 </div>
                 <br>
-                <p class="elenco"><strong>Elenco:</strong></p>
+                <p class="elenco"><strong>Elenco Principal:</strong></p>
                 <br>    
                 <div class="nomes">
-                <p>Nome do ator 1 |</p>
-                <p>Nome do ator 2 |</p>
-                <p>Nome do ator 3 |</p>
+                <p>Nanna Blondell |</p>
+                <p>Anastasios Soulis |</p>
+                <p>Johannes Kuhnke |</p>
                 </div>
                 <br>
                 <p><strong>Avaliação:</strong></p>
@@ -69,12 +72,110 @@
                 <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 7.13l.97 2.29.47 1.11 1.2.1 2.47.21-1.88 1.63-.91.79.27 1.18.56 2.41-2.12-1.28-1.03-.64-1.03.62-2.12 1.28.56-2.41.27-1.18-.91-.79-1.88-1.63 2.47-.21 1.2-.1.47-1.11.97-2.27M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"/></svg>
             </div>
-
         </div>
-
     </section>
 
+    <section class="section-destaque">
+        <div id="destaque" class="destaque-select">
+            <h3 class="titulo-em-destaque">Em Destaque</h3>
+            <select class="select-time" name="categoria">
+                <option  class="select-time" value="Todos">Categoria: Todos</option>
+                <option  class="select-time" value="Aventura">Categoria: Aventura</option>
+                <option class="select-time" value="Romance">Categoria: Romance</option>
+                <option class="select-time" value="Comédia">Categoria: Comédia</option>
+            </select>
+        </div>
+        <div class="grid-destaques">
+            <div>
+            </div>
+            <div>
+            <img class="img-grid" src="https://i.pinimg.com/600x315/35/ac/40/35ac4029d9650aa4aa15b7b1939653b3.jpg">
+            </div>
+            <div>
+            <img class="img-grid" src="https://br.web.img3.acsta.net/medias/nmedia/18/91/05/36/20127436.jpg">
+            </div>
+            <div>
+            <img class="img-grid" src="https://ottvsimg.ottvs.com.br/cov/fox.064819/0064819_335.jpg">
+            </div>
+            <div>
+            <img class="img-grid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Gz2KVtKARqIHgPZYtMZUYqTR2qGjTr5Q3Q&usqp=CAU">
+            </div>
+        </div>
+        <button class="mais-filmes-buttom"><a href="#destaque">+ Carregar mais filmes</a></button>
+        <div id="avaliacoes"></div>
+    </section>
+
+    <section class="avaliacoes">
+        <div >
+            <h5 class="titulo-avaliacoes">Últimas Avaliações</h5>
+        </div>
+        <div class="grid-avaliacoes">
+            <div></div>
+            <div>
+                
+                <h6 class="nome-avaliador">Ana Julia Pedrozo</h6>
+                <p class="avaliacao"><strong>Avaliação:</strong>Em geral o filme
+                é mal produzido, falta investimento e vontade da produção na minha
+                opinião,mesmo assim o roteiro é bem feito e o final é surpreendente
+                Crítica ao filme: Annabelle.
+                </p>
+                <br>
+                <div class="data">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 7.13l.97 2.29.47 1.11 1.2.1 2.47.21-1.88 1.63-.91.79.27 1.18.56 2.41-2.12-1.28-1.03-.64-1.03.62-2.12 1.28.56-2.41.27-1.18-.91-.79-1.88-1.63 2.47-.21 1.2-.1.47-1.11.97-2.27M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 7.13l.97 2.29.47 1.11 1.2.1 2.47.21-1.88 1.63-.91.79.27 1.18.56 2.41-2.12-1.28-1.03-.64-1.03.62-2.12 1.28.56-2.41.27-1.18-.91-.79-1.88-1.63 2.47-.21 1.2-.1.47-1.11.97-2.27M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"/></svg>
+                <div class="space1"></div>
+                <p>05/07/2019</p>
+                </div>
+            </div>
+
+            <div>
+                
+                <h6 class="nome-avaliador">Marcos Paulo da Silva</h6>
+                <p class="avaliacao"><strong>Avaliação:</strong>
+                O filme em si é muito bom, apesar de alguns erro de roteiro se comparado
+                ao livro ainda trás toda ideia principal do mesmo,super recomendo...
+                Critica sobre o filme: Harry Potter and the Deathly Hallows – Part 2</p>
+                <br>
+                <div class="data">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 7.13l.97 2.29.47 1.11 1.2.1 2.47.21-1.88 1.63-.91.79.27 1.18.56 2.41-2.12-1.28-1.03-.64-1.03.62-2.12 1.28.56-2.41.27-1.18-.91-.79-1.88-1.63 2.47-.21 1.2-.1.47-1.11.97-2.27M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"/></svg>
+                <div class="space1"></div>
+                <p>02/11/2020</p>
+                </div>
+            </div>
+
+            <div>
+                
+                <h6 class="nome-avaliador">Cecília Mariano</h6>
+                <p class="avaliacao"><strong>Avaliação:</strong>
+                O filme é muito bom, a animação é bem feita e a dublagem impecável, apenas não gostei 
+                da forma como a história é aborada no início mas em geral é um ótimo filme.
+                Crítica sobre o filme: Procurando Dori.
+                </p>
+                <br>
+                <div class="data">
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><path d="M0,0h24v24H0V0z" fill="none"/><path d="M0,0h24v24H0V0z" fill="none"/></g><g><path d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 7.13l.97 2.29.47 1.11 1.2.1 2.47.21-1.88 1.63-.91.79.27 1.18.56 2.41-2.12-1.28-1.03-.64-1.03.62-2.12 1.28.56-2.41.27-1.18-.91-.79-1.88-1.63 2.47-.21 1.2-.1.47-1.11.97-2.27M12 2L9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"/></svg>
+                <div class="space1"></div>
+                <p>17/09/2020</p>
+                </div>
+            </div>
+        </div>
+        <button class="mais-avaliacoes-buttom"><a href="#destaque">+ Carregar mais avaliações</a></button> 
+    </section>
+
+    <section class="Entrevistas">
+        <div id="entrevistas">
+
+        </div>
+    </section>
    
 </body>
-
+    
 </html>
