@@ -2,10 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border-radius: 1%;
   }
 
-  
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -14,29 +12,13 @@
   body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
-    color: #0A1128;
     background-size: cover;
     background-position: center center;
-    background-color: #0A1128;
-    color:white;
   }
   
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  h1 {
-    font-size: 6rem;
-    text-transform: uppercase;
-  }
-  
-  h1 {
-    font-size: 6rem;
-    text-transform: uppercase;
-  }
   
   h2 {
-    font-size: 5.5rem;
+    font-size: 50px;
   }
   
   h3 {
@@ -54,138 +36,99 @@
   h6 {
     font-size: 3.5rem;
   }
-  
-  .main-bg {
-    background-size: cover;
-    background-position: center center;
-    background-color: #0A1128;
-    color:white;
-  }
-  
-  
-  .white-bg {
-    background: #FFFFFF;
-  }
-  .menu{
-    background-color: whitesmoke;
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
+  .cabecalho{
     width:100%;
-    border-bottom: 1px solid grey;
-    z-index: 1;
-}
-.menu-content{
+    position:fixed;
+    align-items: center;
     display:flex;
-    align-items: center;
     justify-content: space-between;
-    padding-top:0;
-    padding-bottom:0;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.menu h1{
-    font-size: 23px;
-}
-.menu h1 a{
-    color: #0A1128;
-    text-decoration: none;
-}
-.menu ul{
+    background-color: #C0C0C0;
+    height:60px;
+  }
+  .navegacao{
+
+    padding-left:200px;
+    display:flex;
     list-style: none;
-    display: flex;
-}
-.menu ul li a {
-    display: block;
-    padding: 2rem;
-    font-size: 1.8rem;
-    color: #0A1128;
-    position: relative;
-    text-decoration: none;
   }
-  .menu ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    width: 0;
-    height: 0.2rem;
-    background: crimson;
-    transition: all 300ms ease-in-out;
+  .logo {
+    font-weight: 500;
+    border: 1px solid black;
+    padding: 8px 30px; 
+    margin-top:10px;
+    margin-left:10px;
+    font-size:20px;
   }
-  .menu ul li a:hover::after {
-    width: 50%;
-    left: 25%;
-  } 
-  .menu-spacing{
-    height: 65px;
+  a{
+    display:block;
+    padding-right:20px;
+    font-size:15px;
+    color:black;
+    text-decoration:none;
   }
-  .intro-content{
-    position:relative;
-    top:-7rem;
-    display:grid;
-    grid-template-columns: 60% 40%;
-    letter-spacing: 2px;
-    align-items: center;
-    height: 100vh;  
+.pesquisar{
+  border-radius: 4px;
+  color:black;
+  background-color: transparent;
+  border: 0.2px solid black;
+  padding:10px;
+  padding-right: 50px;
 }
-.intro-content h2{
-    margin-left: 30px;
-    font-size: 6rem;
-    line-height: 1.2;
-} 
-.intro-content p{
-    margin-left: 30px;
-}
-.movie-image{
-  height: 500px;
-  width: 500px;
-}
-.top6{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  padding-left:100px;
-  height: 1000px;
-}
-.titulo{
-  font-size:60px;
-  text-align: center;
-  margin-bottom: 120px;
-  
-}
-.fim-section{
-  border-bottom: solid 2px whitesmoke;
-}
-.space{
-  height:80px;
-}
-.top6 img{
-  height:200px;
-  width:200px;
-}
-.top6 p{
-  align-items: left;
-  font-size:15px;
-}
-.filme{
-  width:200px;
-  align-self: center;
-  justify-content: center;
-}
-.contato{
-  height: 200px;
-  display:grid;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
-  justify-content:center;
+.div-pesquisar{
+  margin-right: 60px;
 
 }
-.contato h3{
-  margin-top: 0px;
-  
+.logo-div{
+  padding-left:20px;
+  padding-bottom: 10px;
 }
-.historia{
-  align-self: left;
+.pesquisar::placeholder{
+  color: rgb(59, 58, 58);
+
+}
+.titulo-lancamentos{
+  padding-top:30px;
+  font-size:35px;
+}
+.div-lancamentos-titulo{
+  padding-left: 45%;
+  padding-top: 60px;
+}
+.nome-do-filme{
+  font-size:27px;
+  padding-bottom: 20px;
+}
+.grid-lancamentos{
+ padding-top:60px;
+ display:grid;
+ grid-template-columns: 60% 40%;
+}
+.section-destaque{
+  background-color:#eeee;
+  height:650px;
+}
+.material-icons{
+  position: absolute;
+  top: 49%;
+  left: 93%;
+  transform: translateY(-50%);
+}
+p{
+  font-size:15px;
+}
+.dre{
+  display:flex;
+}
+.dre p{
+  margin-right:20px;
+}
+.nomes{
+  display:flex;
+}
+.nomes p{
+  margin-right:20px;
+}
+.video-iframe{
+  padding-left:40px;
+  display:flex;
 }
