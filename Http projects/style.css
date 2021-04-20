@@ -130,7 +130,7 @@ display:flex;
 margin-right:20px;
 }
 .video-iframe{
-padding-left:40px;
+padding-left:40px;  
 display:flex;
 }
 .filme{
@@ -163,10 +163,8 @@ margin-top:60px;
 margin-left:15px;
 margin-right:15px;
 }
+
 .mais-filmes-buttom{ 
-position: absolute;
-top: 180%;
-left: 70%;
 background-color: rgb(104, 101, 101);
 border: 2px solid black;
 border-radius: 5%;
@@ -181,13 +179,15 @@ color:white;
 height:270px;
 }
 .titulo-avaliacoes{
+white-space:nowrap;
 font-size:30px;
 padding-left:200px;
 }
 .grid-avaliacoes{
+width:100%;
 padding-left:20px;
 display:grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
 }
 .nome-avaliador{
 margin-right:20px;
@@ -209,21 +209,9 @@ display:flex;
 .space1{
 width:10px;
 }
-.mais-avaliacoes-buttom{
-position: absolute;
-top: 250%;
-left: 70%;
-background-color: rgb(104, 101, 101);
-border: 2px solid black;
-border-radius: 5%;
-height:30px;
-padding-left:0px;
 
-}
-.mais-avaliacoes-buttom a{
-color:white;
-}
 .Entrevistas{
+width:100%;
 background-color:rgba(212, 211, 211, 0.933);
 height:550px; 
 }
@@ -264,7 +252,8 @@ border-radius:4%;
 color:white;
 }
 .novidades{
-  height:600px;
+  width:100%;
+  height:650px;
 }
 .titulo-novidades{
   padding-left:230px;
@@ -285,13 +274,9 @@ color:white;
 }
 .grid-two{
   display:grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr;
 }
-.part2-grid{
-  margin-top:20px;
-  position: absolute;
-  left:70%;
-}
+
 .redes-sociais{
   font-size:21px;
 }
@@ -369,6 +354,7 @@ color:white;
   margin-top:10px;
 }
 .rodape-div{
+  width:100%;
   height:120px;
   background-color:rgba(212, 211, 211, 0.933);
   display:flex;
@@ -384,4 +370,94 @@ color:white;
   padding: 8px 30px; 
   font-size:20px;
   margin-right: 100px;
+}
+@media (min-width:0px) and ( max-width:720px){
+  .cabecalho{
+    min-width: 100%;
+  }
+  .navegacao{
+    padding-left: 0px;
+  }
+  .navegacao a{
+    font-size:12px;
+  }
+  .logo{
+    margin-right: 8px;
+    font-size:15px;
+  }
+  .pesquisar{
+    padding-right: 10px;
+  }
+  .pesquisar::placeholder{
+    font-size:12px;
+  }
+  .section-lancamentos{
+   min-width:960px;
+  }
+  .material-icons{
+    position: absolute;
+    top: 49%;
+    left: 90%;
+    transform: translateY(-50%);
+    }
+    .section-lancamentos{
+      height:620px;
+    }
+    .video{
+     width:100% ;
+      height:100%;
+    }
+    .video-iframe{
+      width:500px;
+      height:300px;
+    }
+    .section-destaque{
+      width:100%;
+    }
+    .grid-destaques{
+      display:grid;
+      margin-left:40px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      margin-top:60px;
+      }
+      .select-time{
+        text-align: center;
+        height:30px;
+        margin-left:300px;
+        margin-top:100px;
+        padding-right:10px;
+        }
+        .titulo-em-destaque{
+          margin-top:20px;
+         white-space:nowrap;
+          font-size: 30px;
+        }
+          .grid-avaliacoes{
+            width:100%;
+            padding-left:200px;
+            display:grid;
+            grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+            }
+            .grid-avaliacoes p{
+              font-size:12px;
+              margin-right:70px;
+              margin-bottom: 15px;
+            }
+            .Entrevistas{
+              min-width:960px;
+          }
+          .novidades{
+            min-width:960px;
+          }
+          .div-flex{
+            padding-left:200px;
+            width:500px;
+          }
+          .div-flex p{
+            font-size:10px;
+          }
+          .rodape-div{
+            width:960px;
+          }
+    
 }
